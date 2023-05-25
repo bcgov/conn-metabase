@@ -3,7 +3,7 @@ kind: PGUpgrade
 metadata:
   name: hippo-upgrade
 spec:
-  image: registry.developers.crunchydata.com/crunchydata/crunchy-upgrade:ubi8-5.3.1-0
+  image: artifacts.developer.gov.bc.ca/bcgov-docker-local/crunchy-upgrade:ubi8-5.3.1-0
   postgresClusterName: hippo-ha
   fromPostgresVersion: 13
   toPostgresVersion: 14
