@@ -1,6 +1,7 @@
 crunchy-postgres:
   crunchyImage: artifacts.developer.gov.bc.ca/bcgov-docker-local/crunchy-postgres:centos8-13.5-0
   postgresVersion: 13
+  shutdown: true
   instances:
     replicas: 2
   pgBackRest:
