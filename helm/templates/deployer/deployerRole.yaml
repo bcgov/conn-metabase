@@ -217,6 +217,7 @@ rules:
     - postgres-operator.crunchydata.com
     resources:
     - postgresclusters
+    - pgupgrades
     verbs:
     - get
     - create
