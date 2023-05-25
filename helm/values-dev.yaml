@@ -3,7 +3,7 @@ crunchy-postgres:
   postgresVersion: 14
   shutdown: false
   instances:
-    replicas: 2
+    replicas: 3
   pgBackRest:
     image: artifacts.developer.gov.bc.ca/bcgov-docker-local/crunchy-pgbackrest:ubi8-2.41-4
   pgmonitor:
