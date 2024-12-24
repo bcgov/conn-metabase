@@ -44,8 +44,7 @@ networkPolicies:
 crunchy-postgres:
   fullnameOverride: hippo-ha
   nameOverride: hippo-ha
-  crunchyImage: artifacts.developer.gov.bc.ca/bcgov-docker-local/crunchy-postgres:ubi8-14.7-0
-  postgresVersion: 14
+  postgresVersion: 15
   instances:
     name: pgha1
     replicas: 3
@@ -66,7 +65,6 @@ crunchy-postgres:
         cpu: 50m
         memory: 64Mi
   pgBackRest:
-    image: artifacts.developer.gov.bc.ca/bcgov-docker-local/crunchy-pgbackrest:ubi8-2.41-4
     retention: "10" # Ideally a larger number such as 30 backups/days
     retentionFullType: count
     repos:
@@ -94,7 +92,6 @@ crunchy-postgres:
   pgmonitor:
     enabled: true
     exporter:
-      image: artifacts.developer.gov.bc.ca/bcgov-docker-local/crunchy-postgres-exporter:ubi8-5.3.1-0
       requests:
         cpu: 1m
         memory: 64Mi
@@ -103,7 +100,6 @@ crunchy-postgres:
         memory: 128Mi
   proxy:
     pgBouncer:
-      image: artifacts.developer.gov.bc.ca/bcgov-docker-local/crunchy-pgbouncer:ubi8-1.18-0
       replicas: 2
       requests:
         cpu: 2m
