@@ -18,7 +18,7 @@ metabase:
   resources:
     limits:
       cpu: 300m
-      memory: 1Gi
+      memory: 2Gi #TODO: update before merging to main 
     requests:
       cpu: 10m
       memory: 512Mi
