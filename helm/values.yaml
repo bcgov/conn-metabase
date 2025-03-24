@@ -1,7 +1,7 @@
 fullnameOverride: ccbc-metabase
 
 metabase:
-  replicaCount: 3
+  replicaCount: 1
   image:
     repository: metabase/metabase
     pullPolicy: IfNotPresent
