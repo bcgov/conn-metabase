@@ -47,7 +47,7 @@ crunchy-postgres:
   postgresVersion: 15
   instances:
     name: pgha1
-    replicas: 3
+    replicas: 1
     dataVolumeClaimSpec:
       storage: 1Gi
       storageClassName: netapp-block-standard
