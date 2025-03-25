@@ -1,0 +1,6 @@
+crunchy-postgres:
+  instances:
+    replicas: 1
+
+metabase:
+  replicaCount: 1
