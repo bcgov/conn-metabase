@@ -5,7 +5,7 @@ metabase:
   image:
     repository: metabase/metabase
     pullPolicy: IfNotPresent
-    tag: v0.51.3
+    tag: v0.54.2
   service:
     name: metabase
   database:
