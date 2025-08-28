@@ -3,7 +3,7 @@ fullnameOverride: ccbc-metabase
 metabase:
   replicaCount: 3
   image:
-    repository: metabase/metabase
+    repository: image-registry.openshift-image-registry.svc:5000/b40eb8-tools/metabase
     pullPolicy: IfNotPresent
     tag: v0.54.2
   service:
