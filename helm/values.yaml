@@ -44,7 +44,7 @@ networkPolicies:
 crunchy-postgres:
   fullnameOverride: hippo-ha
   nameOverride: hippo-ha
-  postgresVersion: 15
+  postgresVersion: 17
   instances:
     name: pgha1
     replicas: 3
